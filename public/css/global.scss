@@ -1,0 +1,82 @@
+body{
+
+  margin:0;
+  //font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size:1.2rem;
+  font-weight:normal;
+  line-height:1.5;
+  color:grey;
+  overflow-x:hidden;
+}
+
+main {
+  height: 100%;
+}
+#nav {
+
+  background-color: white;
+  border-bottom: 1px solid lightgrey;
+  height: 50px;
+}
+
+.main-section {
+
+  position:relative;
+  .col-9 {
+    padding-right: 0;
+  }
+  #products {
+
+    padding-top: 17px;
+    //margin-right: 0px;
+    //height:calc(100vh - 50px);
+    height: 100%;
+    border-right: 1px solid lightgrey;
+
+    .card {
+      border-radius: 4%;
+      -webkit-box-shadow: 0px 2px 9px 1px rgba(0,0,0,0.22);
+      -moz-box-shadow: 0px 2px 9px 1px rgba(0,0,0,0.22);
+      box-shadow: 0px 2px 9px 1px rgba(0,0,0,0.22);
+      margin-right: 12px;
+      margin-bottom: 12px;
+      width: 180px;
+      height: 250px;
+      .card-body {
+        padding: 3px;
+        p {
+          margin: 0px;
+          font-size: 10px;
+        }
+        .location {
+          color: lightgrey;
+        }
+        .text {
+          color: lightgrey;
+          font-size: 8px;
+        }
+        .price {
+          color: orange;
+        }
+      }
+
+      .image {
+        border-top-left-radius: 4%;
+        border-top-right-radius: 4%;
+        background-color: lightgrey;
+        height: 80%;
+        //display: block;
+      }
+    }
+  }
+  #categories {
+    padding-top: 15px;
+    .category {
+      border: 1px solid lightgrey;
+      border-radius: 2px;
+      width: 100%;
+      height: 70px;
+    }
+  }
+}
