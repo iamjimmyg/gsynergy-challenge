@@ -27,7 +27,7 @@ import { DragSource } from 'react-dnd';
 import { PropTypes } from 'prop-types';
 import { ITEM } from './itemTypes';
 
-const Product = ({ color, connectDragSource, isDragging }) => (
+const Product = ({ product,price, categories, connectDragSource, isDragging }) => (
   connectDragSource(
     <div className='card'
      style={{
@@ -39,8 +39,8 @@ const Product = ({ color, connectDragSource, isDragging }) => (
       </div>
       <div className="card-body">
         <div className='row'>
-          <div className='col-8'><p>Product</p></div>
-          <div className='col-4 price'><p>$Price</p></div>
+          <div className='col-8'><p>{product.toUpperCase()}</p></div>
+          <div className='col-4 price'><p className='float-right'>${price}</p></div>
         </div>
         <p className='location'>Name and location</p>
         <p className='text'>Notes about the product, such as what I like and what I am thinking of. Support for three lines of display</p>

@@ -31,6 +31,7 @@ const target = {
 const collect = (connect,  monitor) => ({
   connectDropTarget: connect.dropTarget(),
   highlighted: monitor.canDrop(),
+  hovered: monitor.isOver()
 });
 
 export default DropTarget(ITEM, target, collect)(Target);
