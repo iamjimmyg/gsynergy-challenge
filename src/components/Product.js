@@ -50,7 +50,7 @@ const Product = ({ product,price, categories, connectDragSource, isDragging }) =
 );
 
 Product.propTypes = {
-  color: PropTypes.string.isRequired,
+  product: PropTypes.string.isRequired,
   connectDragSource: PropTypes.func.isRequired,
   isDragging: PropTypes.bool.isRequired,
 }
@@ -66,11 +66,12 @@ const source = {
     if (!monitor.didDrop()) {
       return;
     }
-    console.log('DRROOPPPED in ', props)
-    // const { onDrop } = props;
+    //const { onDrop } = props;
+    console.log('DRROOPPPED in ', monitor.getDropResult())
+
     // const { color } = monitor.getItem();
     // const { shape } = monitor.getDropResult();
-    // onDrop(color, shape);
+    // onDrop();
   },
 };
 

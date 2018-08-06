@@ -31,10 +31,10 @@ import { DropTarget } from 'react-dnd';
 import { PropTypes } from 'prop-types';
 import { ITEM } from './itemTypes';
 
-const Category = ({ connectDropTarget, highlighted, category, hovered }) => (
+const Category = ({ connectDropTarget, highlighted, category, total, hovered }) => (
   connectDropTarget(
 
-    <div style={{ backgroundColor: hovered ? 'black' : 'white' }} className='category justify-content-between'>
+    <div style={{ backgroundColor: hovered ? '#ededed' : 'white' }} className='category justify-content-between'>
        <div className='info row'>
          <div className='col-2'>
            <div className='image'>
@@ -43,10 +43,12 @@ const Category = ({ connectDropTarget, highlighted, category, hovered }) => (
          </div>
 
          <div className='col-8'>
-           Categories > Apparel > Tops
+           Categories > {category}
          </div>
          <div className='col-2'>
-           hello
+           <div className='category-total'>
+             {total}
+           </div>
          </div>
        </div>
      </div>
