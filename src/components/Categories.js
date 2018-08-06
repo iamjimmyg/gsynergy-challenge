@@ -6,6 +6,7 @@ class Categories extends Component {
     return (
       <div id='categories' className=''>
         <Category />
+        <Category />
       </div>
     );
   }

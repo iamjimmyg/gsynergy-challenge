@@ -3,9 +3,9 @@ body{
   margin:0;
   //font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-family: 'Roboto', sans-serif;
-  font-size:1.2rem;
+  font-size:1rem;
   font-weight:normal;
-  line-height:1.5;
+  line-height:1.4;
   color:grey;
   overflow-x:hidden;
 }
@@ -23,9 +23,9 @@ main {
 .main-section {
 
   position:relative;
-  .col-9 {
-    padding-right: 0;
-  }
+  // .col-9 {
+  //   padding-right: 0;
+  // }
   #products {
 
     padding-top: 17px;
@@ -44,17 +44,17 @@ main {
       width: 180px;
       height: 250px;
       .card-body {
-        padding: 3px;
+        padding: 4px;
         p {
           margin: 0px;
-          font-size: 10px;
+          font-size: 13px;
         }
         .location {
           color: lightgrey;
         }
         .text {
           color: lightgrey;
-          font-size: 8px;
+          font-size: 10px;
         }
         .price {
           color: orange;
@@ -71,12 +71,30 @@ main {
     }
   }
   #categories {
+    width: 500px;
     padding-top: 15px;
     .category {
+      -webkit-box-shadow: 0px 2px 9px 1px rgba(0,0,0,0.22);
+      -moz-box-shadow: 0px 2px 9px 1px rgba(0,0,0,0.22);
+      box-shadow: 0px 2px 9px 1px rgba(0,0,0,0.22);
       border: 1px solid lightgrey;
       border-radius: 2px;
-      width: 100%;
+
+      width: 480px;
+      margin-left: 18px;
+      margin-bottom: 14px;
       height: 70px;
+      .info {
+        padding-left: 10px;
+        padding-top: 9px;
+        .image {
+          background-color: lightgrey;
+          height: 50px;
+          width: 50px;
+          border-radius: 4px;
+        }
+      }
+
     }
   }
 }

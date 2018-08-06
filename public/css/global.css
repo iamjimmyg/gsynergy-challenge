@@ -1,9 +1,9 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 1.4;
   color: grey;
   overflow-x: hidden; }
 
@@ -17,8 +17,6 @@ main {
 
 .main-section {
   position: relative; }
-  .main-section .col-9 {
-    padding-right: 0; }
   .main-section #products {
     padding-top: 17px;
     height: 100%;
@@ -33,15 +31,15 @@ main {
       width: 180px;
       height: 250px; }
       .main-section #products .card .card-body {
-        padding: 3px; }
+        padding: 4px; }
         .main-section #products .card .card-body p {
           margin: 0px;
-          font-size: 10px; }
+          font-size: 13px; }
         .main-section #products .card .card-body .location {
           color: lightgrey; }
         .main-section #products .card .card-body .text {
           color: lightgrey;
-          font-size: 8px; }
+          font-size: 10px; }
         .main-section #products .card .card-body .price {
           color: orange; }
       .main-section #products .card .image {
@@ -50,9 +48,23 @@ main {
         background-color: lightgrey;
         height: 80%; }
   .main-section #categories {
+    width: 500px;
     padding-top: 15px; }
     .main-section #categories .category {
+      -webkit-box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.22);
+      -moz-box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.22);
+      box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.22);
       border: 1px solid lightgrey;
       border-radius: 2px;
-      width: 100%;
+      width: 480px;
+      margin-left: 18px;
+      margin-bottom: 14px;
       height: 70px; }
+      .main-section #categories .category .info {
+        padding-left: 10px;
+        padding-top: 9px; }
+        .main-section #categories .category .info .image {
+          background-color: lightgrey;
+          height: 50px;
+          width: 50px;
+          border-radius: 4px; }
