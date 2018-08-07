@@ -13,6 +13,7 @@ class ProductsAndCategories extends Component {
     };
   }
 
+
   handleDrop(category) {
     const { drops } = this.state;
     const nextDrops = [...drops, {
@@ -25,16 +26,16 @@ class ProductsAndCategories extends Component {
   render() {
     const { drops } = this.state;
     return (
-      <div id='products-and-categories' className='container-fluid main-section d-flex'>
-        {/* <div className=' '> */}
-          <div className='products-container'>
+      <div id='products-and-categories' className='main-section container-fluid'>
+        <div className='row'>
+          <div className='products-container col'>
             <Products/>
           </div>
-          <div className='categories-container'>
+          <div className='categories-container col-md-auto'>
             <Categories />
           </div>
 
-        {/* </div> */}
+        </div>
       </div>
     );
   }
