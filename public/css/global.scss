@@ -11,7 +11,7 @@ body{
 }
 
 main {
-  height: 100%;
+  height: 100vh;
 }
 #nav {
 
@@ -21,55 +21,59 @@ main {
 }
 
 .main-section {
-
-  position:relative;
+  //height:calc(100vh - 50px);
+  //position:relative;
   // .col-9 {
   //   padding-right: 0;
   // }
-  #products {
+  .products-container {
+    min-height: calc(100vh - 50px);
+    #products {
 
-    padding-top: 17px;
-    //margin-right: 0px;
-    //height:calc(100vh - 50px);
-    height: 100%;
-    border-right: 1px solid lightgrey;
+      padding-top: 17px;
+      //margin-right: 0px;
 
-    .card {
-      border-radius: 4%;
-      -webkit-box-shadow: 0px 2px 9px 1px rgba(0,0,0,0.22);
-      -moz-box-shadow: 0px 2px 9px 1px rgba(0,0,0,0.22);
-      box-shadow: 0px 2px 9px 1px rgba(0,0,0,0.22);
-      margin-right: 12px;
-      margin-bottom: 12px;
-      width: 180px;
-      height: 250px;
-      .card-body {
-        padding: 4px;
-        p {
-          margin: 0px;
-          font-size: 13px;
-        }
-        .location {
-          color: lightgrey;
-        }
-        .text {
-          color: lightgrey;
-          font-size: 10px;
-        }
-        .price {
-          color: orange;
-        }
-      }
+      height: 100%;
+      border-right: 1px solid lightgrey;
 
-      .image {
-        border-top-left-radius: 4%;
-        border-top-right-radius: 4%;
-        background-color: lightgrey;
-        height: 80%;
-        //display: block;
+      .card {
+        border-radius: 4%;
+        -webkit-box-shadow: 0px 2px 9px 1px rgba(0,0,0,0.22);
+        -moz-box-shadow: 0px 2px 9px 1px rgba(0,0,0,0.22);
+        box-shadow: 0px 2px 9px 1px rgba(0,0,0,0.22);
+        margin-right: 12px;
+        margin-bottom: 12px;
+        width: 180px;
+        height: 250px;
+        .card-body {
+          padding: 4px;
+          p {
+            margin: 0px;
+            font-size: 13px;
+          }
+          .location {
+            color: lightgrey;
+          }
+          .text {
+            color: lightgrey;
+            font-size: 10px;
+          }
+          .price {
+            color: orange;
+          }
+        }
+
+        .image {
+          border-top-left-radius: 4%;
+          border-top-right-radius: 4%;
+          background-color: lightgrey;
+          height: 80%;
+          //display: block;
+        }
       }
     }
   }
+
   #categories {
     width: 500px;
     padding-top: 15px;

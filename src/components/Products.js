@@ -17,7 +17,6 @@ class Products extends Component {
         updateCategory={this.props.updateCategory}
       />
     })
-    console.log(this.props.updateCategory)
 
     return (
       <div id='products' className='container-fluid'>

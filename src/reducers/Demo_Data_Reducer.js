@@ -4,7 +4,7 @@ export default function(state = {
       product: 'necklace',
       id: 'necklace1',
       price: 30,
-      categories: ['jewelry'],
+      categories: ['jewelry',],
     },
     {
       product: 'pants',

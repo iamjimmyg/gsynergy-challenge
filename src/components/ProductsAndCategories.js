@@ -3,9 +3,6 @@ import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import Products from './Products'
 import Categories from './Categories'
-// import Category from './components/Category
-// import Drop from './components/Drop';
-// import Source from './components/Source';
 
 class ProductsAndCategories extends Component {
   constructor(props) {
@@ -28,16 +25,16 @@ class ProductsAndCategories extends Component {
   render() {
     const { drops } = this.state;
     return (
-      <div id='products-and-categories' className='container-fluid main-section'>
-        <div className='d-flex'>
-          <div className=''>
+      <div id='products-and-categories' className='container-fluid main-section d-flex'>
+        {/* <div className=' '> */}
+          <div className='products-container'>
             <Products/>
           </div>
-          <div className=''>
+          <div className='categories-container'>
             <Categories />
           </div>
 
-        </div>
+        {/* </div> */}
       </div>
     );
   }
