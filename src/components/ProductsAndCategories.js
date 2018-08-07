@@ -27,8 +27,8 @@ class ProductsAndCategories extends Component {
     const { drops } = this.state;
     return (
       <div id='products-and-categories' className='main-section container-fluid'>
-        <div className='row'>
-          <div className='products-container col'>
+        <div className='row' style={{height: '100%'}}>
+          <div className='products-container col' style={{overflow: 'overlay'}}>
             <Products/>
           </div>
           <div className='categories-container col-md-auto'>

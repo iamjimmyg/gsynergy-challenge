@@ -15,59 +15,60 @@ main {
   border-bottom: 1px solid lightgrey;
   height: 50px; }
 
-.main-section .products-container {
-  padding-top: 17px;
-  border-right: 1px solid lightgrey; }
-  .main-section .products-container #products .card {
-    border-radius: 4%;
-    -webkit-box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.22);
-    -moz-box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.22);
-    box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.22);
-    margin-right: 12px;
-    margin-bottom: 12px;
-    width: 180px;
-    height: 250px; }
-    .main-section .products-container #products .card .card-body {
-      padding: 4px; }
-      .main-section .products-container #products .card .card-body p {
-        margin: 0px;
-        font-size: 13px; }
-      .main-section .products-container #products .card .card-body .location {
-        color: lightgrey; }
-      .main-section .products-container #products .card .card-body .text {
-        color: lightgrey;
-        font-size: 10px; }
-      .main-section .products-container #products .card .card-body .price {
-        color: orange; }
-    .main-section .products-container #products .card .image {
-      border-top-left-radius: 4%;
-      border-top-right-radius: 4%;
-      background-color: lightgrey;
-      height: 80%; }
-
-.main-section .categories-container #categories {
-  padding-top: 15px; }
-  .main-section .categories-container #categories .category {
-    -webkit-box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.22);
-    -moz-box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.22);
-    box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.22);
-    border: 1px solid lightgrey;
-    border-radius: 2px;
-    width: 480px;
-    margin-bottom: 14px;
-    height: 70px; }
-    .main-section .categories-container #categories .category .info {
-      padding-left: 10px;
-      padding-top: 9px; }
-      .main-section .categories-container #categories .category .info .image {
+.main-section {
+  height: calc(100vh - 50px); }
+  .main-section .products-container {
+    padding-top: 17px;
+    border-right: 1px solid lightgrey; }
+    .main-section .products-container #products .card {
+      border-radius: 4%;
+      -webkit-box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.22);
+      -moz-box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.22);
+      box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.22);
+      margin-right: 12px;
+      margin-bottom: 12px;
+      width: 180px;
+      height: 250px; }
+      .main-section .products-container #products .card .card-body {
+        padding: 4px; }
+        .main-section .products-container #products .card .card-body p {
+          margin: 0px;
+          font-size: 13px; }
+        .main-section .products-container #products .card .card-body .location {
+          color: lightgrey; }
+        .main-section .products-container #products .card .card-body .text {
+          color: lightgrey;
+          font-size: 10px; }
+        .main-section .products-container #products .card .card-body .price {
+          color: orange; }
+      .main-section .products-container #products .card .image {
+        border-top-left-radius: 4%;
+        border-top-right-radius: 4%;
         background-color: lightgrey;
-        height: 50px;
-        width: 50px;
-        border-radius: 4px; }
-      .main-section .categories-container #categories .category .info .category-total {
-        text-align: center;
-        font-size: 12px;
-        border-radius: 5px;
-        background-color: tomato;
-        color: white;
-        width: 35px; }
+        height: 80%; }
+  .main-section .categories-container #categories {
+    padding-top: 15px; }
+    .main-section .categories-container #categories .category {
+      -webkit-box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.22);
+      -moz-box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.22);
+      box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.22);
+      border: 1px solid lightgrey;
+      border-radius: 2px;
+      width: 480px;
+      margin-bottom: 14px;
+      height: 70px; }
+      .main-section .categories-container #categories .category .info {
+        padding-left: 10px;
+        padding-top: 9px; }
+        .main-section .categories-container #categories .category .info .image {
+          background-color: lightgrey;
+          height: 50px;
+          width: 50px;
+          border-radius: 4px; }
+        .main-section .categories-container #categories .category .info .category-total {
+          text-align: center;
+          font-size: 12px;
+          border-radius: 5px;
+          background-color: tomato;
+          color: white;
+          width: 35px; }
