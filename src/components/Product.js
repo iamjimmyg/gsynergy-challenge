@@ -27,7 +27,8 @@ import { DragSource } from 'react-dnd';
 import { PropTypes } from 'prop-types';
 import { ITEM } from './itemTypes';
 
-const Product = ({ product,price, categories, connectDragSource, isDragging }) => (
+
+const Product = ({ updateCategory, product,price, categories, connectDragSource, isDragging }) => (
   connectDragSource(
     <div className='card'
      style={{
@@ -66,12 +67,14 @@ const source = {
     if (!monitor.didDrop()) {
       return;
     }
-    //const { onDrop } = props;
-    console.log('DRROOPPPED in ', monitor.getDropResult())
+    // const {  } = props;
+    //console.log(props, ' DRROOPPPED in ', monitor.getDropResult())
+    //console.log(props)
 
     // const { color } = monitor.getItem();
     // const { shape } = monitor.getDropResult();
-    // onDrop();
+    const droppedIn = monitor.getDropResult().category
+    props.updateCategory(props.id, props.categories, droppedIn)
   },
 };
 
@@ -79,5 +82,6 @@ const collect = (connect, monitor) => ({
   connectDragSource: connect.dragSource(),
   isDragging: monitor.isDragging(),
 });
+
 
 export default DragSource(ITEM, source, collect)(Product);

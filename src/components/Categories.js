@@ -4,7 +4,22 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 class Categories extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+
+    }
+  }
+  // componentWillMount(){
+  //
+  // }
+  //
+  // componentWillReceiveProps(prevProps){
+  //   console.log(this.props)
+  // }
+
   render() {
+    //console.log(this.props.demoData)
     const allCategories = []
     const noDuplicateCategories = []
     const countCategories = {}
@@ -24,9 +39,12 @@ class Categories extends Component {
     for(var k in countCategories){
       noDuplicateCategories.push(k)
     }
-    console.log(countCategories)
-    const listCategories = noDuplicateCategories.map(category => {
-      return <Category category={category} total={countCategories[category]}/>
+    //console.log(countCategories)
+    const listCategories = noDuplicateCategories.map((category, i) => {
+      return <Category category={category}
+        total={countCategories[category]}
+        key={category + i}
+      />
     })
     return (
       <div id='categories' className=''>
