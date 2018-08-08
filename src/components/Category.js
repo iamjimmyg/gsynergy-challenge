@@ -1,59 +1,38 @@
-// import React, { Component } from 'react';
-//
-// class Category extends Component {
-//
-//   render() {
-//     return (
-//       <div className='category justify-content-between'>
-//         <div className='info row'>
-//           <div className='col-2'>
-//             <div className='image'>
-//
-//             </div>
-//           </div>
-//
-//           <div className='col-8'>
-//             Categories > Apparel > Tops
-//           </div>
-//           <div className='col-2'>
-//             hello
-//           </div>
-//         </div>
-//       </div>
-//     );
-//   }
-// }
-//
-// export default Category;
-
-import React from 'react';
+import React, {Component} from 'react';
 import { DropTarget } from 'react-dnd';
 import { PropTypes } from 'prop-types';
 import { ITEM } from './itemTypes';
 
-const Category = ({ connectDropTarget, highlighted, category, total, hovered }) => (
-  connectDropTarget(
 
-    <div style={{ backgroundColor: hovered ? '#ededed' : 'white' }} className='category justify-content-between'>
-       <div className='info row'>
-         <div className='col-2'>
-           <div className='image'>
+class Category extends Component{
+  render(){
+    return (
+      this.props.connectDropTarget(
+        <div
+          style={{ backgroundColor: this.props.hovered ? '#ededed' : 'white' }}
+          className='category justify-content-between'>
+           <div className='info row'>
+             <div className='col-2'>
+               <div className='image'>
 
+               </div>
+             </div>
+
+             <div className='col-8'>
+               Categories > {this.props.category}
+             </div>
+             <div className='col-2'>
+               <div className='category-total'>
+                 {this.props.total}
+               </div>
+             </div>
            </div>
          </div>
+      )
+    )
 
-         <div className='col-8'>
-           Categories > {category}
-         </div>
-         <div className='col-2'>
-           <div className='category-total'>
-             {total}
-           </div>
-         </div>
-       </div>
-     </div>
-  )
-);
+  }
+}
 
 Category.propTypes = {
   connectDropTarget: PropTypes.func.isRequired,
@@ -63,9 +42,10 @@ Category.propTypes = {
 
 const target = {
   drop(props) {
-    const { category } = props;
+    const { category, total } = props;
     return ({
       category,
+      total
     });
   }
 }

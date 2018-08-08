@@ -1,27 +1,3 @@
-// import React, { Component } from 'react';
-//
-// class Product extends Component {
-//   render() {
-//     return (
-//       <div className="card">
-//         <div className="image">
-//
-//         </div>
-//         <div className="card-body">
-//           <div className='row'>
-//             <div className='col-8'><p>Product</p></div>
-//             <div className='col-4 price'><p>$Price</p></div>
-//           </div>
-//           <p className='location'>Name and location</p>
-//           <p className='text'>Notes about the product, such as what I like and what I am thinking of. Support for three lines of display</p>
-//         </div>
-//       </div>
-//     );
-//   }
-// }
-//
-// export default Product;
-
 import React from 'react';
 import { DragSource } from 'react-dnd';
 import { PropTypes } from 'prop-types';
@@ -36,8 +12,8 @@ const Product = ({ updateCategory, product,price, categories, connectDragSource,
       }}
     >
       <div className="image">
-
       </div>
+
       <div className="card-body">
         <div className='row'>
           <div className='col-8'><p>{product.toUpperCase()}</p></div>
@@ -67,12 +43,6 @@ const source = {
     if (!monitor.didDrop()) {
       return;
     }
-    // const {  } = props;
-    //console.log(props, ' DRROOPPPED in ', monitor.getDropResult())
-    //console.log(props)
-
-    // const { color } = monitor.getItem();
-    // const { shape } = monitor.getDropResult();
     const droppedIn = monitor.getDropResult().category
     props.updateCategory(props.id, props.categories, droppedIn)
   },

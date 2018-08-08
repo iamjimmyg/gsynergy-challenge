@@ -66,6 +66,7 @@ export default function(state = {
     //add product to state copy
     stateCopy[selectedIndex] = selectedProduct
     //replace state with new one
+    console.log(selectedProduct)
     return Object.assign({}, state, {
       dummyData: stateCopy,
     })

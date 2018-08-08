@@ -1,25 +1,10 @@
 import React, { Component } from 'react'
 import Category from './Category'
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+//import { bindActionCreators } from 'redux';
 
 class Categories extends Component {
-  constructor(props){
-    super(props)
-    this.state = {
-
-    }
-  }
-  // componentWillMount(){
-  //
-  // }
-  //
-  // componentWillReceiveProps(prevProps){
-  //   console.log(this.props)
-  // }
-
   render() {
-    //console.log(this.props.demoData)
     const allCategories = []
     const noDuplicateCategories = []
     const countCategories = {}

@@ -13,7 +13,6 @@ class ProductsAndCategories extends Component {
     };
   }
 
-
   handleDrop(category) {
     const { drops } = this.state;
     const nextDrops = [...drops, {
@@ -24,7 +23,6 @@ class ProductsAndCategories extends Component {
     });
   }
   render() {
-    const { drops } = this.state;
     return (
       <div id='products-and-categories' className='main-section container-fluid'>
         <div className='row' style={{height: '100%'}}>

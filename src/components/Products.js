@@ -19,23 +19,13 @@ class Products extends Component {
 
 
   handleResize() {
-    //console.log("I've been resized!");
     let prodSectionWidth = window.innerWidth - 540
-    let numOfProducts = this.props.demoData.length
-    let totalProdsWidth = numOfProducts * 192
-    let extraWidth = prodSectionWidth - totalProdsWidth
     let prodPerRow = Math.floor(prodSectionWidth / 195)
     let width = prodPerRow * 192
     this.setState({width:width})
   }
 
   render() {
-    let prodSectionWidth = window.innerWidth - 540
-    let numOfProducts = this.props.demoData.length
-    let totalProdsWidth = numOfProducts * 192
-    let extraWidth = prodSectionWidth - totalProdsWidth
-    let prodPerRow = Math.floor(prodSectionWidth / 195)
-    let width = prodPerRow * 192
 
     const allProducts = this.props.demoData.map((product, i) => {
       return <Product
@@ -52,9 +42,7 @@ class Products extends Component {
       <div id='products' className='container-fluid' style={{width: this.state.width}}>
           <div className='row'>
             {allProducts}
-
           </div>
-
       </div>
     );
   }
